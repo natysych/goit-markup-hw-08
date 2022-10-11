@@ -1,0 +1,20 @@
+:root {
+    --weblogo-color: #2196F3;
+    --text-color: #000000;
+    --background: #FFFFFF;
+    --portcontacts-color: #212121;
+    --tel-color: #757575;
+    --sectionbackgroung: #F5F4FA;
+    --solutionbackground-color: #2F303A;
+    --iconbackground: F5F4FA;
+    --iconcolor: #AFB1B8;
+    --border-color: #ECECEC;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    background: var(--background);
+}

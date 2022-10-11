@@ -1,0 +1,40 @@
+.advantages-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.advantage-items {
+    flex-basis: calc((100% - 4*30px)/4);
+
+    &:not(:last-child) {
+            margin-right: 30px;
+    }
+}
+
+.advantage-items_pic {
+    @extend %align !optional;
+    justify-content: center;
+    background-color: #F5F4FA;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 4px;
+}
+
+.advantage-header {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--portcontacts-color);
+    background-position: center;
+    background-color: var(--iconbackground);
+    border-radius: 4px;
+}
+
+.advantage-text {
+    line-height: 1.71;
+    color: var(--tel-color);
+}
