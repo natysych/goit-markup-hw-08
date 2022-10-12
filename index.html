@@ -19,9 +19,11 @@
 <!-- HEADER -->
 
 <header class="header">
-    <div class="container header-container">
-    <nav class="header-navigation">
-        <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+    <div class="container header_container">
+         
+    <nav class="header_navigation">
+            <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+
             <ul class="header-navigation-list">
                 <li class="navigation-list-item"><a href="./index.html" class="navigation-list-item-href current">Студія</a></li>
                 <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-list-item-href">Портфоліо</a></li>
@@ -30,7 +32,11 @@
 
             </ul>
     </nav>
-    
+    <button type="button" class="mobile-menu-btn" data-menu-open> 
+        <svg class="mobile-menu-btn_icon" width="40" height="40" > 
+            <use href="./images/sprite.svg#icon-burger-menu"></use>
+        </svg>
+    </button>
     <ul class="navigation-list-contacts">
             <li class="navigation-list-contacts-item">
                
@@ -57,21 +63,76 @@
             </li>
     </ul>
     </div>
+
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu_container">
+
+
+        <button type="button" class="mobile-menu_close-btn" data-menu-close>
+            <svg class="mobile-menu_close-icon" width="40" height="40">
+                <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+        </button>
+        <navigation> 
+        <ul>
+            <li class="">
+                <a href="">Студія</a>
+            </li>
+            <li class="">
+                <a href="">Портфоліо</a>
+            </li>
+            <li class="">
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+        </navigation>
+
+        <ul>
+            <li class="">
+                <a href="tel:0961111111">+380961111111</a>
+            </li>
+            <li class="">
+                <a href="mailto:info@example.com">
+                    info@example.com</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li class="">
+                <a href="instagram">Instagram</a>
+            </li>
+
+            <li class="">
+                <a href="Twitter">Twitter</a>
+            </li>
+
+            <li class="">
+                <a href="Facebook">Facebook</a>
+            </li>
+                        
+            <li class="">
+                <a href="LinkedIn">LinkedIn</a>
+            </li>
+
+
+        </ul>
+            </div>
+    </div>
     </header>
 
 <main>
 
 <!-- HERO SECTION -->
 
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="container">
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
         <button class="button-orderservice" type="button" data-modal-open>Замовити послугу</button>
     </div>
-    </section>
+    </section> -->
 
     <!--SECTION ADVANTAGES --> 
-    <section class="section">
+    <!-- <section class="section">
         <div class="container">
 
         <ul class="advantages-section">
@@ -119,11 +180,11 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- OUR SERVICES SECTION -->
     
-    <section class="our-services section">
+    <!-- <section class="our-services section">
         <div class="container">
         <h2 class="section-header">Чим ми займаємося</h2>
         <ul class="our-services-pics">
@@ -141,10 +202,10 @@
             </li>
         </ul>
     </div>
-    </section>
+    </section> -->
     
     <!-- OUR TEAM   -->
-    <section class="section-team section">
+    <!-- <section class="section-team section">
         <div class="container">
         <h2  class="section-header">Наша команда</h2>
         <ul class="team">
@@ -298,10 +359,10 @@
             </li>
             </ul>
             </div>
-            </section>
+            </section> -->
 
 <!-- Постоянные клиенты   -->
-<section class="section permanentclients">
+<!-- <section class="section permanentclients">
     <div class="container section-clients">
         <h2 class="section-header">Постійні клієнти</h2>
         <ul class="clients">
@@ -351,13 +412,13 @@
     </div>
 </section>
 
-        </main>
+        </main> -->
 
     <!-- FOOTER -->
     
     <!-- LOGO AND CONTACTS -->
     
-        <footer class="footer">
+        <!-- <footer class="footer">
        
             <div class="footer-container container"> 
                 <div>
@@ -371,11 +432,11 @@
                 </ul>
                 </address>
 
-                </div>
+                </div> -->
 
      <!-- SECTION JOIN  -->
 
-                <div class="footer-section-join">
+                <!-- <div class="footer-section-join">
                     
                 <div class="footer-section-join-wrapper"> 
 
@@ -412,11 +473,11 @@
                     </ul>
                     </div>
     
-                    </div>
+                    </div> -->
 
 <!-- FEEDBACK FORM -->
 
-                <div class="footer-section-subscription">
+                <!-- <div class="footer-section-subscription">
                 <p class="footer-section-header"> 
                     <strong>Підпишіться на розсилку</strong></p>
                     <div class="subscription-form-wrapper"> 
@@ -454,10 +515,10 @@
                         </use>
                     </svg>
                 </button>
+ -->
 
 
-
-    <p class="contact-form-title">Залиште свої дані, ми вам зателефонуємо</p>
+    <!-- <p class="contact-form-title">Залиште свої дані, ми вам зателефонуємо</p>
 
                 <form class="contact-form">
                 
@@ -522,7 +583,9 @@
 
             </div>
             </div>
-        <script src="./modal.js"></script>
+        <script src="./js/modal.js"></script> -->
+
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>
