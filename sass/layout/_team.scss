@@ -55,52 +55,57 @@
 // / 768 px+ // @media screen and (min-width:768px) {}
 
 // 1200 px +
-// @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
 
 
-// .section-team {
-//     display: flex;
-//     flex-direction: inline-block;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     background: var(--sectionbackgroung);
-// }
+.section-team {
+    background: var(--sectionbackgroung);
+}
 
-// .team {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+.header-h {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--portcontacts-color);
+}
 
-// .team-card {
-//     background-color: var(--background);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-//     &:not(:nth-child(4n)) {
-//         margin-right: 30px;
-//     }
-// }
+.team-card {
+    background-color: var(--background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
+}
 
 
-// .teamcontent-wrapper {
-//     padding: 30px 32px;
-//     text-align: center;
-//     flex-basis: calc((100% - 120px)/4);
-// }
+.teamcontent-wrapper {
+    padding: 30px 32px;
+    text-align: center;
+    flex-basis: calc((100% - 120px)/4);
+}
 
-// .manager {
-//     margin-bottom: 10px;
-//     color: var(--portcontacts-color);
-//     font-size: 16px;
-//     font-weight: 500;
-//     line-height: 1.18;
-//     letter-spacing: 0.03em;
-// }
+.manager {
+    margin-bottom: 10px;
+    color: var(--portcontacts-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
 
-// .manager_position {
-//     color: var(--tel-color);
-//     font-size: 16px;
-//     line-height: 1.17;
-//     letter-spacing: 0.03em;
-//     margin-bottom: 16px;
-// }
+.manager_position {
+    color: var(--tel-color);
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+}

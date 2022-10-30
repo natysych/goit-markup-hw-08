@@ -126,32 +126,7 @@
 // 1200 px +
 @media screen and (min-width:1200px) {
 
-    .header_container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-
-    .header-navigation-list {
-        display: flex;
-        padding-top: 32px;
-        gap: 50px;
-        }
-    
-    .navigation-list-contacts {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 30px;
-        }
-
-    .header_navigation {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .section-header {
+.section-header {
         margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.16;
@@ -159,7 +134,7 @@
         color: var(--portcontacts-color);
     }
 
-    .header_container {
+    .header-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -168,6 +143,24 @@
         line-height: 1.14;
     }
 
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-navigation-list {
+        padding-top: 32px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .navigation-list-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+    }
 
     .navigation-list-contacts-item {
         margin-left: auto;
@@ -181,56 +174,55 @@
         letter-spacing: 0.02em;
         line-height: 1.14;
 
-    &:focus,
-    &:hover {
-        color: var(--weblogo-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+        &:focus,
+        &:hover {
+            color: var(--weblogo-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-    &:hover .envelope,
-    &:hover .smartphone {
-        fill: var(--weblogo-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+        &:hover .envelope,
+        &:hover .smartphone {
+            fill: var(--weblogo-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-    &:focus .envelope,
-    &:focus .smartphone {
-        fill: var(--weblogo-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+        &:focus .envelope,
+        &:focus .smartphone {
+            fill: var(--weblogo-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
     }
 
     .navigation-list-item-href {
         color: var(--portcontacts-color);
 
-    &:focus,
-    &:hover {
-        color: var(--weblogo-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
+        &:focus,
+        &:hover {
+            color: var(--weblogo-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 
     .current {
         color: var(--weblogo-color);
 
-    &::after {
-        display: block;
-        height: 4px;
-        background-color: #2196F3;
-        content: '';
-        border-radius: 2px;
-        margin-top: 32px;
+        &::after {
+            display: block;
+            height: 4px;
+            background-color: #2196F3;
+            content: '';
+            border-radius: 2px;
+            margin-top: 32px;
+        }
     }
-}
 
     .envelope,
     .smartphone {
         margin-right: 10px;
         fill: var(--tel-color);
 
-}
+    }
 
 }
 
