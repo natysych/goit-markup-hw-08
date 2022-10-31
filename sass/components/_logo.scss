@@ -2,7 +2,6 @@
 
 // 0 - 767 px Mobile
 .logo-webstudio {
-    // margin-right: 93px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -35,20 +34,7 @@
 // 1200 px +
 
 @media screen and (min-width:1200px) {
-    .logo-webstudio {
-            margin-right: 93px;
-            font-family: Raleway;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 1.19;
-            letter-spacing: 00.03em;
-        }
-    
-        .logo-web {
-            color: var(--weblogo-color)
-        }
-    
-        .logo-studio {
-            color: var(--text-color);
-        }
+.logo-webstudio {
+    margin-right: 93px;
     }
+}
