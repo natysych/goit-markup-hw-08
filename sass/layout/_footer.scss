@@ -7,8 +7,7 @@
 
 .footer-container {
     display: flex;
-    flex-basis: auto;
-    flex-direction: inline-block;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -24,7 +23,6 @@
 
 .footer-contacts-navigation {
     display: flex;
-    flex-basis: auto;
     flex-direction: inline-block;
     justify-content: center;
     align-items: center;
