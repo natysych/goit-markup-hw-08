@@ -6,12 +6,9 @@
 }
 
 .footer-container {
-    flex-basis: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 480px;
 }
+
 .footer-webstudio {
     display: flex;
     justify-content: center;
@@ -98,13 +95,11 @@
     align-items: center;
 }
 
-.footer-section-subscription, {
+.footer-section-subscription {
     display: flex;
-    flex-basis: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
 }
 
 .subscription-form-wrapper {
@@ -145,7 +140,6 @@
     flex-direction: block;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
     width: 200px;
     height: 50px;
     background: #2196F3;
