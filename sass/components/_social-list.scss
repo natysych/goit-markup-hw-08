@@ -2,7 +2,14 @@
 
 .social-list {
     display: flex;
-    width: 236px;
+    width: 206px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.social-list_footer {
+    display: flex;
+    width: 206px;
     margin: auto;
     justify-content: space-between;
 }
@@ -11,8 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--iconcolor);

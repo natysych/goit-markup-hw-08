@@ -7,11 +7,13 @@
     align-items: center;
     background: var(--sectionbackgroung);
 }
+
 .section-header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .team {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +35,8 @@
 
 .teamcontent-wrapper {
     margin-top: 30px;
-    height: 162px;
+    margin-bottom: 24px;
+    // height: 162px;
 }
 
 .manager {
@@ -103,6 +106,7 @@
     margin-bottom: 10px;
     color: var(--portcontacts-color);
     font-size: 16px;
+    font-style: bold;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.03em;
