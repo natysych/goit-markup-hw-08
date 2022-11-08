@@ -1,9 +1,9 @@
 // 0-767px
 .container {
     width: 480px;
-//     margin-left: auto;
-//     margin-right: auto;
-// 
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -20,6 +20,7 @@
 @media screen and (min-width: 1200px) {
     .container {
         width: 1600px;
+    
     }
 }
 
