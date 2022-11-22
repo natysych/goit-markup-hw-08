@@ -1,3 +1,17 @@
+// 0 - 767 px Mobile
+
+// 0-1199 px
+// @media screen and (max-width:1199px) {}
+
+// @media screen and (max-width:768px) {}
+
+// 768 px +
+// @media screen and (min-width:768px) {}
+
+// 1200 px +
+
+@media screen and (min-width:1200px) {
+
 .backdrop {
     position: fixed;
     top: 0px;
@@ -171,4 +185,5 @@
 .agreement-condition {
     text-decoration: underline;
     color: rgba(33, 150, 243, 1);
+}
 }

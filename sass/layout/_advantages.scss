@@ -2,9 +2,8 @@
 // @media screen and (max-width:1199px) {}
 
 // 0 - 767 px Mobile
-
+@media screen and (max-width:767px) {
 .advantages-section {
-    width: 450px;
     height: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -62,15 +61,15 @@
 .our-services {
     display: none;
 }
-
+}
 // 768 px +
 // @media screen and (min-width:768px) {}
 
 // 1200 px +
 @media screen and (min-width:1200px) {
 .advantages-section {
-        display: flex;
-        align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
     }
 
     .advantage-items {
