@@ -3,8 +3,9 @@
 
 // 0 - 767 px Mobile
 @media screen and (max-width:767px) {
+
 .advantages-section {
-    height: 120px;
+    // height: 120px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -16,6 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
     &:not(:last-child) {
     margin-bottom: 30px;
@@ -28,11 +30,11 @@
     align-items: center;
     width: 450px;
     height: 120px;
-    background-color: #F5F4FA;
+    background-color: #F5F4FA;;
     border-radius: 4px;
     margin-bottom: 30px;
-    
 }
+
 .advantage-items_pic {
     height: 65px;
     width: 70px;
@@ -67,9 +69,17 @@
 
 // 1200 px +
 @media screen and (min-width:1200px) {
+
+.advantages-section-margin {
+    padding-bottom: 0;
+}
+
 .advantages-section {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 215px;
+    padding-right: 215px;
     }
 
     .advantage-items {

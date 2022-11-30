@@ -22,7 +22,7 @@
 // 0 - 767 px Mobile
 .hero {
     background-image:
-         linear-gradient(rgba(47, 48, 58, 0.4),
+    linear-gradient(rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)),
         url(/images/hero1-mobile.jpg);
     background-repeat: no-repeat;
@@ -35,6 +35,8 @@
     text-align: center;
     background-size: cover;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
 }
     .hero-text {
         width: 360px;
@@ -74,9 +76,9 @@
 .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/Imgpic-hero.jpg);
+            url(/images/@2xImgpic-hero.jpg);
         background-color: var(--solutionbackground-color);
-        max-width: 1600px;
+        width: 1600px;
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;

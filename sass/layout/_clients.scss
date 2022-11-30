@@ -3,10 +3,12 @@
 .clients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    // justify-content: space-between;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// 
 }
+
 .section-header {
     margin-bottom: 30px;
 }
@@ -20,10 +22,14 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
-
-    &:nth-child(-n+4) {
     margin-bottom: 30px;
+    
+
+    &:nth-child(2n+1) {
+    margin-right: 30px;
     }
+  
+    
 
     &:hover {
         fill: var(--weblogo-color);
@@ -42,12 +48,16 @@
         flex-wrap: wrap;
     }
 
-    .clients-items {
-        width: 170px;
+.section-clients {
+    padding-left: 215px;
+    padding-right: 215px;
+}
+.clients-items {
+    width: 170px;
 
-        &:not(:nth-child(6n)) {
-            margin-right: 24px;
-        }
+    &:not(:nth-child(6n)) {
+         margin-right: 24px;
+    }
 
     }
 }

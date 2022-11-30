@@ -1,5 +1,7 @@
 // 0 - 767 px Mobile
-
+.backdrop {
+    display: none;
+}
 // 0-1199 px
 // @media screen and (max-width:1199px) {}
 
@@ -13,6 +15,7 @@
 @media screen and (min-width:1200px) {
 
 .backdrop {
+    display: contents;
     position: fixed;
     top: 0px;
     left: 0px;

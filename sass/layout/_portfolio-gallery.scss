@@ -119,14 +119,14 @@
         // 768 px +
         // @media screen and (min-width:768px) {}
     
-        // 1200 px +
-        @media screen and (min-width:1200px) {
+// 1200 px +
+@media screen and (min-width:1200px) {
 
-            .section-portfolio {
-                    padding-top: 0px;
-                }
+.section-portfolio {
+    padding-top: 0px;
+    }
             
-                .button-service-types {
+.button-service-types {
                     display: flex;
                     align-items: flex-start;
                     margin-top: 94px;
@@ -167,6 +167,8 @@
                 .service-examples {
                     display: flex;
                     flex-wrap: wrap;
+                    padding-left: 215px;
+                    padding-right: 215px;
                 }
             
                 .service-items:not(:nth-child(3n)) {
@@ -223,5 +225,5 @@
                 .service-items-wrapper:hover .blue-icon-text {
                     transform: translateY(0);
                     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                // }
+                }
         }
