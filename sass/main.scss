@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholder';
 
 @import './base/common';
 @import './base/container';
@@ -11,11 +12,14 @@
 @import './components/backdrop';
 
 
-@import './layout/services';
 @import './layout/advantages';
+@import './layout/blue-icon-overlay';
 @import './layout/clients';
 @import './layout/footer';
+@import './layout/header-portfolio';
 @import './layout/header';
 @import './layout/hero';
+@import './layout/portfolio-gallery';
+@import './layout/services';
 @import './layout/team';
 

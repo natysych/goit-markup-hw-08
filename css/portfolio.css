@@ -722,7 +722,7 @@ address {
 }
 .header-portfolio {
   margin-bottom: 94px;
-  border-bottom: 1px solid #ECECEC;
+  border: 1px solid #ECECEC;
 }
 
 .header {
@@ -809,6 +809,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .mobile-menu_social-list_item {
@@ -817,15 +820,17 @@ address {
   line-height: 22px;
   color: var(--weblogo-color);
 }
-.mobile-menu_social-list_item::after {
+.mobile-menu_social-list_item:not(:last-child) {
+  margin-right: 20px;
+}
+.mobile-menu_social-list_item:not(:last-child):after {
+  height: 0;
   width: 22px;
-  height: 0px;
+  content: "";
+  margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-.mobile-menu_social-list_item:not(:last-child) {
-  margin-right: 20px;
 }
 
 .mobile-menu.is-open {
@@ -908,6 +913,9 @@ address {
   .mobile-menu, .mobile-menu-container, .mobile-menu_close-btn, .mobile-menu-btn, .mobile-menu_items, .mobile-menu-btn, .data-menu-open, .data-menu-open, .mobile-menu_items {
     display: none;
   }
+  .header {
+    padding-bottom: 0;
+  }
   .header_container {
     padding-right: 15px;
     display: -webkit-box;
@@ -929,6 +937,17 @@ address {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .current {
+    color: var(--weblogo-color);
+  }
+  .current::after {
+    display: block;
+    height: 4px;
+    background-color: #2196F3;
+    content: "";
+    border-radius: 2px;
+    margin-top: 32px;
+  }
   .header-navigation-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -948,7 +967,6 @@ address {
             flex-direction: column;
     color: #757575;
     fill: #757575;
-    margin-top: 21px;
   }
   .navigation-list-contacts-item:not(:last-child) {
     margin-bottom: 10px;
@@ -1009,9 +1027,13 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: base-line;
+        -ms-flex-align: base-line;
+            align-items: base-line;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
