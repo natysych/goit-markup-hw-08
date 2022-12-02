@@ -68,7 +68,31 @@
 }
 
 
-// / 768 px+ // @media screen and (min-width:768px) {}
+// / 768 px+ // 
+@media screen and (min-width:768px) {
+.section-wrapper {
+    height: 1285px;
+    background: #F5F4FA;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.section-header {
+    margin-top: 60px;
+}
+
+.team-card {
+    width: 354px;
+    
+    &:nth-child(2n+1) {
+    margin-right: 30px;
+    }
+}
+.team-card_pic {
+    height: 374px;
+    width: 354px;
+}
+
+}
 
 // 1200 px +
 @media screen and (min-width:1200px) {

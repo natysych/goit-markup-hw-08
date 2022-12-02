@@ -5,7 +5,6 @@
 @media screen and (max-width:767px) {
 
 .advantages-section {
-    // height: 120px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -65,7 +64,37 @@
 }
 }
 // 768 px +
-// @media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+.advantages-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.advantage-items {
+    width: 354px;    
+    gap: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n+1) {
+    margin-right: 30px;
+    }
+}
+
+.advantage-items_pic_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 354px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.advantage-header {
+    margin-bottom: 10px;
+}
+
+}
+
 
 // 1200 px +
 @media screen and (min-width:1200px) {

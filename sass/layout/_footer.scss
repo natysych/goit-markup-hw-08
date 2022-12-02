@@ -170,7 +170,30 @@
 // @media screen and (max-width:768px) {}
 
 // 768 px +
-// @media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+.footer-container {
+    width: 768px;
+}
+.logo-webstudio {
+    margin-right: 0;
+}
+.footer-contacts-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.footer-section-join {
+    margin-top: 0;
+}
+.footer-logo-adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
 
 // 1200 px +
 @media screen and (min-width:1200px) {

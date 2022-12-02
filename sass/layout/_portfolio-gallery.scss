@@ -7,10 +7,17 @@
 .button-service-types {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: 94px;
     margin-left: -8px;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    &:nth-child(3) {
+    margin-right: 145px;
+    }
+    &:nth-child(-n+3) {
+    margin-bottom: 21px;
+    }
 }
 
 .buttons:not(:last-child) {

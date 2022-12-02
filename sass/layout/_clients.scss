@@ -39,7 +39,17 @@
 
 }
 
-// / 768 px+ // @media screen and (min-width:768px) {}
+// / 768 px+ // 
+@media screen and (min-width:768px) {
+.clients-items {
+    &:nth-child(2n) {
+    margin-right: 30px;
+    }
+}
+.permanentclients {
+    padding-top: 0;
+}
+}
 
 // 1200 px +
 @media screen and (min-width:1200px)  {
