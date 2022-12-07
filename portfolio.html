@@ -20,23 +20,26 @@
 
     <!-- Оглавление -->
     <header class="header header_portfolio">
-        <div class="container header_container">
-            <nav class="header-navigation">
-                <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-                <ul class="header-navigation-list">
-                    <li class="navigation-list-item"><a href="./index.html" class="navigation-list-item-href">Студія</a></li>
-                    <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-list-item-href current">Портфоліо</a></li>
-    
-                    <li class="navigation-list-item"><a href="/" class="navigation-list-item-href">Контакти</a></li>
-    
-                </ul>
-            </nav>
+        <div class="container header_container header_container_portfolio">
+        <nav class="header_navigation">
+            <a href="" class="logo-webstudio"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+        
+            <ul class="header-navigation-list">
+                <li class="navigation-list-item"><a href="./index.html" class="navigation-list-item-href">Студія</a>
+                </li>
+                <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-list-item-href current">Портфоліо</a></li>
+        
+                <li class="navigation-list-item"><a href="/" class="navigation-list-item-href">Контакти</a></li>
+        
+            </ul>
+        </nav>
             
     <button type="button" class="mobile-menu-btn" data-menu-open>
         <svg class="mobile-menu-btn_icon" width="40" height="40">
             <use href="./images/sprite.svg#icon-burger-menu"></use>
         </svg>
     </button>
+      
             <ul class="navigation-list-contacts">
                 <li class="navigation-list-contacts-item">
             
@@ -61,6 +64,62 @@
                 </li>
             </ul>
         </div>
+
+<div class="mobile-menu" data-menu>
+    <div class="container mobile-menu_container">
+
+
+        <button type="button" class="mobile-menu_close-btn" data-menu-close>
+            <svg class="mobile-menu_close-icon" width="40" height="40">
+                <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+        </button>
+        <navigation>
+            <ul class="mobile-menu_items">
+                <li class="mobile-menu_navigation mm_current">
+                    <a href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu_navigation">
+                    <a href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-menu_navigation">
+                    <a href="">Контакти</a>
+                </li>
+            </ul>
+        </navigation>
+
+        <ul>
+            <li class="mobile-menu_contacts_tel">
+                <a href="tel:0961111111">+380961111111</a>
+            </li>
+            <li class="mobile-menu_contacts_email">
+                <a href="mailto:info@example.com">
+                    info@example.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu_social-list">
+            <li class="mobile-menu_social-list_item">
+                <a href="instagram">Instagram</a>
+            </li>
+
+            <li class="mobile-menu_social-list_item">
+                <a href="Twitter">Twitter</a>
+            </li>
+
+            <li class="mobile-menu_social-list_item">
+                <a href="Facebook">Facebook</a>
+            </li>
+
+            <li class="mobile-menu_social-list_item">
+                <a href="LinkedIn">LinkedIn</a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+
     </header>
 
 
@@ -88,7 +147,7 @@
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                         <img src="./images/imgTechno.jpg" alt="Технокряк" width="370" height="294"/>
+                         <img class="service-items_img" src="./images/imgTechno.jpg" alt="Технокряк"/>
                     </div>
                         <div class="work-items-wrapper"> 
                     <h2 class="service-name">Технокряк</h2>
@@ -106,7 +165,7 @@
                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
  
-                        <img src="./images/imgNewOrlean.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294"/>
+                        <img src="./images/imgNewOrlean.jpg" alt="Постер New Orlean vs Golden Star"/>
                     </div>
                         <div class="work-items-wrapper">
                     <h2  class="service-name">Постер New Orlean vs Golden Star</h2>
@@ -123,7 +182,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                    <img src="./images/imgSeafood.jpg" alt="Ресторан Seafood" width="370" height="294"/>
+                    <img src="./images/imgSeafood.jpg" alt="Ресторан Seafood"/>
                     </div>
                         <div class="work-items-wrapper"> 
                     <h2  class="service-name">Ресторан Seafood</h2>
@@ -142,7 +201,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                    <img src="./images/imgPrime.jpg" alt="Проект Prime" width="370" height="294"/>
+                    <img src="./images/imgPrime.jpg" alt="Проект Prime"/>
                     </div>
 
                         <div class="work-items-wrapper">
@@ -162,7 +221,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                    <img src="./images/imgBoxes.jpg" alt="Проект Boxes" width="370" height="294"/>
+                    <img src="./images/imgBoxes.jpg" alt="Проект Boxes"/>
                     </div>
                         <div class="work-items-wrapper">
                     <h2  class="service-name">Проект Boxes</h2>
@@ -180,7 +239,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                    <img src="./images/imgInspiration.jpg" alt="Inspiration has no Borders" width="370" height="294"/>
+                    <img src="./images/imgInspiration.jpg" alt="Inspiration has no Borders"/>
                     </div>
                         <div class="work-items-wrapper">
                     <h2  class="service-name">Inspiration has no Borders</h2>
@@ -197,7 +256,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                    <img src="./images/imgLimitedEdition.jpg" alt="Издание Limited Edition" width="370" height="294"/>
+                    <img src="./images/imgLimitedEdition.jpg" alt="Издание Limited Edition"/>
                     </div>
                         <div class="work-items-wrapper">
                     
@@ -215,7 +274,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
                      
-                    <img src="./images/imgLab.jpg" alt="Проект LAB" width="370" height="294"/>
+                    <img src="./images/imgLab.jpg" alt="Проект LAB"/>
                     </div>
                             <div class="work-items-wrapper">
                     <h2  class="service-name">Проєкт LAB</h2>
@@ -232,7 +291,7 @@
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
 
-                    <img src="./images/imgGrowBusiness.jpg" alt="Growing Business" width="370" height="294"/>
+                    <img src="./images/imgGrowBusiness.jpg" alt="Growing Business"/>
                     </div>
                         <div class="work-items-wrapper">
                 <h2  class="service-name">Growing Business</h2>
@@ -253,95 +312,97 @@
     
     <!-- LOGO AND CONTACTS -->
     
-    <footer class="footer container">
-    
-        <div class="footer-container container">
-            <div class="footer-logo-adress">
-                <a href="" class="logo-webstudio footer-webstudio"><span class="logo-web">Web</span><span
-                        class="logo-studio logo-studiofooter">Studio</span></a>
-    
-                <address class="footer-adress">
-                    <ul class="footer-contacts-navigation">
-                        <li class="footer-contacts-address">м. Київ, пр-т Лесі Українки, 26</li>
-                        <li class="footer-contacts-other"><a href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer-contacts-other"><a href="tel:+380961111111">+38 097 111 11 11</a></li>
-                    </ul>
-                </address>
-    
-            </div>
-    
-            <!-- SECTION JOIN  -->
-    
-            <div class="footer-section-join">
-    
-                <div class="footer-section-join-wrapper">
-    
-                    <p class="footer-section-header"><strong>Приєднуйтесь</strong></p>
-                    <ul class="social-list_footer list">
-                        <li class="social-list-items">
-                            <a class="social-list-link" href="">
-                                <svg class="social-list-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-insta"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-items">
-                            <a class="social-list-link" href="">
-                                <svg class="social-list-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-items">
-                            <a class="social-list-link" href="">
-                                <svg class="social-list-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-fb"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-items">
-                            <a class="social-list-link" href="">
-                                <svg class="social-list-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-ldn"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+        <footer class="footer container">
+        
+            <div class="footer-container container">
+                <div class="footer-contacts-wrapper">
+                    <div class="footer-logo-adress">
+                        <a href="" class="logo-webstudio footer-webstudio"><span class="logo-web">Web</span><span
+                                class="logo-studio logo-studiofooter">Studio</span></a>
+        
+                        <address class="footer-adress">
+                            <ul class="footer-contacts-navigation">
+                                <li class="footer-contacts-address">м. Київ, пр-т Лесі Українки, 26</li>
+                                <li class="footer-contacts-other"><a href="mailto:info@example.com">info@example.com</a></li>
+                                <li class="footer-contacts-other"><a href="tel:+380961111111">+38 097 111 11 11</a></li>
+                            </ul>
+                        </address>
+        
+                    </div>
+        
+                    <!-- SECTION JOIN  -->
+        
+                    <div class="footer-section-join">
+        
+                        <div class="footer-section-join-wrapper">
+        
+                            <p class="footer-section-header"><strong>Приєднуйтесь</strong></p>
+                            <ul class="social-list_footer list">
+                                <li class="social-list-items">
+                                    <a class="social-list-link" href="">
+                                        <svg class="social-list-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-insta"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-items">
+                                    <a class="social-list-link" href="">
+                                        <svg class="social-list-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-items">
+                                    <a class="social-list-link" href="">
+                                        <svg class="social-list-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-items">
+                                    <a class="social-list-link" href="">
+                                        <svg class="social-list-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-ldn"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                    </div>
                 </div>
-    
-            </div>
-    
-            <!-- FEEDBACK FORM -->
-    
-            <div class="footer-section-subscription">
-                <p class="footer-section-header">
-                    <strong>Підпишіться на розсилку</strong>
-                </p>
-                <div class="subscription-form-wrapper">
-                    <form class="subscription-form" action="javascript:void(0)">
-                        <label>
-                            <input name="user-e-mail" class="subscription-form-input" type="email" placeholder="E-mail"
-                                required />
-    
-                        </label>
-    
-                        <button class="button-subscribe">
-    
-                            <span class="button-subscribe-text">Підписатися</span>
-                            <svg class="icon-sent" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-sent">
-                                </use>
-                            </svg>
-    
-                        </button>
-    
-                    </form>
-    
+        
+                <!-- FEEDBACK FORM -->
+        
+                <div class="footer-section-subscription">
+                    <p class="footer-section-header">
+                        <strong>Підпишіться на розсилку</strong>
+                    </p>
+                    <div class="subscription-form-wrapper">
+                        <form class="subscription-form" action="javascript:void(0)">
+                            <label>
+                                <input name="user-e-mail" class="subscription-form-input" type="email" placeholder="E-mail"
+                                    required />
+        
+                            </label>
+        
+                            <button class="button-subscribe">
+        
+                                <span class="button-subscribe-text">Підписатися</span>
+                                <svg class="icon-sent" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-sent">
+                                    </use>
+                                </svg>
+        
+                            </button>
+        
+                        </form>
+        
+                    </div>
+        
                 </div>
-    
             </div>
-        </div>
-    </footer>
+        </footer>
         
 </body>
 </html>

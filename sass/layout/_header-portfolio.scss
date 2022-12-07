@@ -1,8 +1,33 @@
 // 0 - 767 px Mobile
 
+.header_container_portfolio {
+    border-bottom: 1px solid #ECECEC;
+    width: 480px;
+    height: 60px;
+    padding-bottom: 16px;
+}
+
 .header-portfolio {
     margin-bottom: 94px;
-    border: 1px solid #ECECEC;
+}
+
+@media screen and (min-width: 768px) {
+
+    
+.header_container_portfolio {
+    width: 768px;
+    padding-bottom: 0;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+.header_container_portfolio {
+    width: 1600px;
+    height: 80px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
 }
 
 
