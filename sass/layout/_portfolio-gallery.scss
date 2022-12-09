@@ -43,15 +43,17 @@
 .service-examples {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.service-items:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
+// .service-items:not(:nth-child(3n)) {
+//     margin-right: 30px;
+// }
 
-.service-items:nth-child(-n + 6) {
-    margin-bottom: 30px;
-}
+// .service-items:nth-child(9) {
+//     margin-bottom: 30px;
+// }
 
 .service-name {
     font-size: 18px;
