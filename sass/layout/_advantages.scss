@@ -39,7 +39,7 @@
     width: 70px;
     margin-top: 25px;
     margin-bottom: 25px;
-    // background-size: cover;
+    background-size: cover;
     // flex-grow: 1;
 }
 
@@ -63,34 +63,34 @@
     display: none;
 }
 }
+
 // 768 px +
 @media screen and (min-width:768px) {
-.advantages-section {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .advantage-items {
-    // width: 354px;    
+    width: 354px;    
     gap: 30px;
     margin-bottom: 30px;
+    
     &:nth-child(2n+1) {
     margin-right: 30px;
     }
 }
 
-.advantage-items_pic_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // width: 354px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: #F5F4FA;
-}
 .advantage-items_pic {
     width: 70px;
     height: 70px;
 }
+
+.advantage-items_pic_wrapper {
+    display: flex;
+    padding: 25px 145px;
+    width: 354px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+}
+
 .advantage-header {
     margin-bottom: 10px;
 }
@@ -116,40 +116,40 @@
 .advantage-items_pic_wrapper {
     width: 270px;
     height: 120px;
-    // padding: 25px 102px;
+    padding: 25px 102px;
     background-color: #F5F4FA;
 }
-.advantage-items {
-        flex-basis: calc((100% - 4*30px)/4);
+// .advantage-items {
+//     flex-basis: calc((100% - 4*30px)/4);
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
+//     &:not(:last-child) {
+//      margin-right: 30px;
+//     }
+// }
 
-    .advantage-items_pic {
-        @extend %align !optional;
-        background-color: #F5F4FA;
-        height: 70px;
-        width: 70px;
-        // background-size: cover;
-        // flex-grow: 1;
-        border-radius: 4px;
-    }
+.advantage-items_pic {
+    @extend %align !optional;
+    background-color: #F5F4FA;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 4px;
+}
+.advantage-header {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--portcontacts-color);
+    background-position: center;
+    background-color: var(--iconbackground);
+    border-radius: 4px;
+}
 
-    .advantage-header {
-        margin-bottom: 10px;
-        line-height: 1.14;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: var(--portcontacts-color);
-        background-position: center;
-        background-color: var(--iconbackground);
-        border-radius: 4px;
-    }
+.advantage-text {
+    line-height: 1.71;
+    color: var(--tel-color);
+}
 
-    .advantage-text {
-        line-height: 1.71;
-        color: var(--tel-color);
-    }
 }
