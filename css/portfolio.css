@@ -1398,6 +1398,10 @@ address {
           justify-content: center;
 }
 
+.service-items:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .service-name {
   font-size: 18px;
   color: var(--portcontacts-color);
@@ -1434,6 +1438,23 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.service-items-wrapper:hover,
+.service-items-wrapper:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba 0, 0, 0.12, 0px 4px 4px rgb(0, 0, 0), 1px 4px 6px rgba 0, 0, 0.16;
+          box-shadow: 0px 1px 1px rgba 0, 0, 0.12, 0px 4px 4px rgb(0, 0, 0), 1px 4px 6px rgba 0, 0, 0.16;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-items-wrapper:hover .blue-icon-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .work-items-wrapper {
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
@@ -1442,8 +1463,15 @@ address {
 }
 
 @media screen and (min-width: 768px) {
+  .service-examples {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .button-service-types {
-    margin-right: 100px;
+    margin-right: 0px;
     margin-left: 100px;
   }
   .service-items {
@@ -1455,9 +1483,7 @@ address {
   }
   .service-items:not(:nth-child(3n)) {
     margin-right: 0;
-  }
-  .service-items:nth-child(-n+6) {
-    margin-bottom: 0;
+    margin-top: 0;
   }
   .service-items:nth-child(2n+1) {
     margin-right: 30px;
@@ -1481,6 +1507,10 @@ address {
   }
   .service-type:nth-child(2) {
     margin-bottom: 20px;
+  }
+  .buttons:nth-child(3) {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1536,7 +1566,7 @@ address {
   .service-items:not(:nth-child(3n)) {
     margin-right: 30px;
   }
-  .service-items:nth-child(-n+6) {
+  .service-items {
     margin-bottom: 30px;
   }
   .service-name {
