@@ -24,7 +24,7 @@
     background-image:
     linear-gradient(rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)),
-        url(/images/imghero1-mobile.jpg);
+        url(/images/imghero1-mobile.jpg), url(/images/imghero@2-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -38,33 +38,34 @@
     padding-left: 0;
     padding-right: 0;
 }
-    .hero-text {
-        width: 360px;
-        margin: auto;
-        margin-top: 118px;
-        margin-bottom: 30px;
-        font-size: 26px;
-        font-weight: 900;
-        line-height: 1.875;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--background);
-        }
+
+.hero-text {
+    width: 360px;
+    margin: auto;
+    margin-top: 118px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--background);
+}
         
-        .button-orderservice {
-        min-width: 200px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.87;
-        background: var(--weblogo-color);
-        color: var(--background);
-        padding: 10px 32px;
-        border: none;
-        border-radius: 4px;
-        letter-spacing: 0.06em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        }
+.button-orderservice {
+    min-width: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    background: var(--weblogo-color);
+    color: var(--background);
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 
 // 768 px +
@@ -73,7 +74,7 @@
     background-image:
     linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-    url(/images/imghero1_tablet.jpg);
+    url(/images/imghero1_tablet.jpg), url(/images/imghero@2x_tablet.jpg);
     width: 768px;
     height: 400px;
     // padding-top: 16px;
@@ -93,7 +94,7 @@
 .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(/images/Imghero1-desktop.jpg);
+            url(/images/Imghero1-desktop.jpg) url(/images/Imghero@2-desktop.jpg);
         background-color: var(--solutionbackground-color);
         width: 1600px;
         height: 600px;
