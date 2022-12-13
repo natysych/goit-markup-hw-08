@@ -67,20 +67,25 @@
 // 768 px +
 @media screen and (min-width:768px) {
 
+.advantages-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 738px;
+}
+
 .advantage-items {
     width: 354px;    
-    gap: 30px;
     margin-bottom: 30px;
     
     &:nth-child(2n+1) {
     margin-right: 30px;
     }
-}
 
-// .advantage-items_pic {
-//     width: 70px;
-//     height: 70px;
-// }
+    &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+    }
+
+}
 
 .advantage-items_pic_wrapper {
     display: flex;
@@ -94,9 +99,7 @@
 .advantage-header {
     margin-bottom: 10px;
 }
-
 }
-
 
 // 1200 px +
 @media screen and (min-width:1200px) {

@@ -560,13 +560,23 @@ address {
   }
 }
 @media screen and (min-width: 768px) {
+  .advantages-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 738px;
+  }
   .advantage-items {
     width: 354px;
-    gap: 30px;
     margin-bottom: 30px;
   }
   .advantage-items:nth-child(2n+1) {
     margin-right: 30px;
+  }
+  .advantage-items:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
   .advantage-items_pic_wrapper {
     display: -webkit-box;
@@ -1247,6 +1257,7 @@ address {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 10;
 }
 
 .mobile-menu_navigation {
@@ -1393,7 +1404,7 @@ address {
     display: flex;
     font-size: 14px;
     font-weight: 500;
-    padding-top: 32px;
+    padding: 0 32px;
     gap: 50px;
   }
   .navigation-list-contacts {
