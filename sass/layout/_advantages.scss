@@ -110,11 +110,14 @@
 
 .advantages-section {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-between;
     padding-left: 215px;
     padding-right: 215px;
-    }
+    flex-basis: 900px;
+}
+
 
 .advantage-items_pic_wrapper {
     width: 270px;
@@ -124,7 +127,7 @@
 }
 
 .advantage-items {
-    // flex-basis: calc((100% - 4*30px)/4);
+    flex-basis: 270px;
 
     &:not(:last-child) {
      margin-right: 30px;

@@ -125,10 +125,10 @@ address {
 .backdrop {
   display: contents;
   position: fixed;
-  top: 93px;
-  left: 15px;
-  width: 450px;
-  height: 609px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
   transition: opacity 250ms linear, visibility 250ms linear;
@@ -313,6 +313,14 @@ address {
   color: rgb(33, 150, 243);
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    top: 93px;
+    left: 15px;
+    width: 450px;
+    height: 609px;
+  }
+}
 .logo-webstudio {
   font-family: Raleway;
   font-weight: 700;
@@ -340,13 +348,18 @@ address {
 }
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 450px;
+  height: 609px;
+  left: 15px;
+  top: 93px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 528px;
   background-color: #FFFFFF;
   padding: 40px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-close-btn {
@@ -377,6 +390,22 @@ address {
   transition: fill 250ms linear;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    left: 159px;
+    top: 208px;
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 93px;
+    left: 15px;
+    width: 450px;
+    height: 609px;
+  }
+}
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,20 +629,29 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 215px;
     padding-right: 215px;
+    -ms-flex-preferred-size: 900px;
+        flex-basis: 900px;
   }
   .advantage-items_pic_wrapper {
     width: 270px;
     height: 120px;
     padding: 25px 102px;
     background-color: #F5F4FA;
+  }
+  .advantage-items {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
   }
   .advantage-items:not(:last-child) {
     margin-right: 30px;
@@ -1257,7 +1295,6 @@ address {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  z-index: 10;
 }
 
 .mobile-menu_navigation {
@@ -1551,8 +1588,8 @@ address {
 
 */
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1-mobile.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/imghero1-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/imghero1-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1598,16 +1635,16 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1-mobile.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1-mobile.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/imghero1_tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/imghero1_tablet.jpg);
     width: 768px;
     height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/@2xImgpic-hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/@2xImgpic-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Imghero1-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Imghero1-desktop.jpg);
     background-color: var(--solutionbackground-color);
     width: 1600px;
     height: 600px;
