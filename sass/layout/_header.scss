@@ -37,7 +37,7 @@
     transition: opacity 250ms linear, visibility 250ms linear;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    z-index: 10;
+    z-index: ;
 }
 
 .mobile-menu_navigation {
@@ -201,6 +201,10 @@
 }
 }
 
+
+
+
+
 // 1200 px +
 @media screen and (min-width:1200px) {
 
@@ -314,6 +318,7 @@
         fill: var(--tel-color);
 
     }
+
 
 }
 

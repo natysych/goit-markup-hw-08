@@ -2,10 +2,10 @@
 .backdrop {
     display: contents;
     position: fixed;
-    top: 93px;
-    left: 15px;
-    width: 450px;
-    height: 609px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms linear, visibility 250ms linear;
 
@@ -175,3 +175,19 @@
     color: rgba(33, 150, 243, 1);
 }
 
+// Tablet
+
+
+
+
+// Desktop
+
+@media screen and (min-width:1200px) {
+.backdrop {
+    top: 93px;
+    left: 15px;
+    width: 450px;
+    height: 609px;
+
+}
+}
